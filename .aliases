@@ -144,3 +144,11 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+alias cap="bundle exec cap"
+alias rake="bundle exec rake"
+alias librarian-puppet="bundle exec librarian-puppet"
+alias rspec="bundle exec rspec"
+
+# setup docker
+alias dockery="eval $(docker-machine env default)"

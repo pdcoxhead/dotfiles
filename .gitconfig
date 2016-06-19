@@ -192,3 +192,6 @@
   trustExitCode = true
   cmd = "/usr/local/bin/bcomp" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
 
+[user]
+	name = Peter Coxhead
+	email = peter.coxhead@orionhealth.com

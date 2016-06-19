@@ -61,11 +61,11 @@ prompt_git() {
 		[ -n "${s}" ] && s="${white}${s}";
 		[ -n "${c}${a}${u}${s}" ] && gitup2date="✓";
 
-                if [-n "${gitup2date}"]; then
-			echo -e "${green}${gitup2date}";
-		else
+#		if [ -n "$gitup2date"]; then
+#			echo -e "${green}${gitup2date}";
+#		else
 			echo -e "${1}${branchName}${blue}[${c}${a}${u}${s}${blue}]${reset}";
-		fi;
+#		fi;
 
 	else
 		return;
