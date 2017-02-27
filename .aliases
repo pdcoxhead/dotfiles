@@ -11,11 +11,14 @@ alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
+alias onedrive="cd ~/Documents/Office365/OneDrive/OneDrive\ -\ Orion\ Health/"
 alias g="git"
 alias h="history"
 alias j="jobs"
 alias cdcd="cd ~/Projects/continuous-delivery"
 alias platform="cd ~/Projects/shared-services/platformws/platform"
+alias projects="cd ~/Projects/"
+alias cdcp="cd ~/Projects/other/clinical-portal"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -152,3 +155,7 @@ alias rspec="bundle exec rspec"
 
 # setup docker
 alias dockery="eval $(docker-machine env default)"
+
+# list usb
+alias lusb="system_profiler SPUSBDataType"
+alias switchjava="source ~/bin/switchjava.sh"
