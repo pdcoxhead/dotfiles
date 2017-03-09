@@ -159,3 +159,6 @@ alias dockery="eval $(docker-machine env default)"
 # list usb
 alias lusb="system_profiler SPUSBDataType"
 alias switchjava="source ~/bin/switchjava.sh"
+
+#start eclipse
+alias eclipse="/Applications/Eclipse/Eclipse.app/Contents/MacOS/eclipse >/dev/null 2>&1 &"
