@@ -51,3 +51,6 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 eval "$(rbenv init -)"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+export RGRAV_HOME="/Users/$USER/bin/rgrav"
+export PATH=$JAVA_HOME/bin:$PATH:$RGRAV_HOME
+source $RGRAV_HOME/rgrav-completion.bash
