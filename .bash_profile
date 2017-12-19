@@ -54,4 +54,7 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 export RGRAV_HOME="/Users/$USER/bin/rgrav"
 export PATH=$JAVA_HOME/bin:$PATH:$RGRAV_HOME
 source $RGRAV_HOME/rgrav-completion.bash
-export PATH=$PATH:/usr/local/go/bin/
+#export PATH=$PATH:/usr/local/go/bin/
+source /Users/peterco/git-completion.bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
