@@ -1,5 +1,5 @@
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:/usr/local/bin/:$PATH";
+export PATH="$HOME/Library/Python/2.7/bin:$HOME/bin:/usr/local/bin/:$PATH";
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -55,6 +55,16 @@ export RGRAV_HOME="/Users/$USER/bin/rgrav"
 export PATH=$JAVA_HOME/bin:$PATH:$RGRAV_HOME
 source $RGRAV_HOME/rgrav-completion.bash
 #export PATH=$PATH:/usr/local/go/bin/
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 source /Users/peterco/git-completion.bash
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+export PATH
