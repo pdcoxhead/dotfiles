@@ -165,7 +165,7 @@ alias eclipse="/Applications/Eclipse/Eclipse.app/Contents/MacOS/eclipse >/dev/nu
 alias squirrel=/Applications/SQuirreLSQL.app/Contents/MacOS/squirrel-sql.sh
 alias npms='npm run -s'
 
-# Timing example BEGIN=$(perl -MTime::HiRes -e 'printf("%.0f\n",Time::HiRes::time()*1000)') && aws cloudwatch get-metric-statistics --metric-name CPUUtilization --dimensions "Name='InstanceId',Value='i-df069e06'" --start-time "2017-11-01T00:00:00.000Z" --end-time "2017-11-08T00:00:00.000Z" --period 86400 --statistics Average --namespace "AWS/EC2" > cloudwatchstatstest.json && END=$(perl -MTime::HiRes -e 'printf("%.0f\n",Time::HiRes::time()*1000)') && echo $(expr $END - $BEGIN)ms
-function mytimer() {
-BEGIN=$(perl -MTime::HiRes -e 'printf("%.0f\n",Time::HiRes::time()*1000)') && $($1)  && END=$(perl -MTime::HiRes -e 'printf("%.0f\n",Time::HiRes::time()*1000)') && echo $(expr $END - $BEGIN)ms
-}
+#alias mapfolder="for folder in ./*; do (cd ${folder}; $($@); cd ..); done" #I'm sure this can work somehow :(
+#alias mapfolder=for folder in $(ls -Ad */); do ( echo "${folder}"); done
+#alias imlzy="for i in $(ls -Ad */); do (echo -n \"${i}\"); done"
+#alias findfixtureuse="for folder in $(ls test/fixtures | grep \"\\w\"); do echo \"\";echo \"${folder}\"; ack ${folder}; done"
