@@ -165,6 +165,10 @@ alias eclipse="/Applications/Eclipse/Eclipse.app/Contents/MacOS/eclipse >/dev/nu
 alias squirrel=/Applications/SQuirreLSQL.app/Contents/MacOS/squirrel-sql.sh
 alias npms='npm run -s'
 
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
 #alias mapfolder="for folder in ./*; do (cd ${folder}; $($@); cd ..); done" #I'm sure this can work somehow :(
 #alias mapfolder=for folder in $(ls -Ad */); do ( echo "${folder}"); done
 #alias imlzy="for i in $(ls -Ad */); do (echo -n \"${i}\"); done"

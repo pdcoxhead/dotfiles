@@ -73,10 +73,10 @@
 	}; f"
 
 	# beyond compare diff
-	df = difftool --tool=bc3
+	df = difftool --tool=bcomp4
 
-	# beyon compare merge
-	mrge = mergetool --tool=bc3
+	# beyond compare merge
+	mrge = mergetool --tool=bcomp4
 
 
 [apply]
@@ -192,6 +192,14 @@
   trustExitCode = true
   cmd = "/usr/local/bin/bcomp" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
 
+[difftool "bcomp4"]
+  trustExitCode = true
+  cmd = "/usr/local/bin/bcomp" \"$(wslpath -w \"$LOCAL\")\" \"$(wslpath -w \"$REMOTE\")\" /lefttitle=\"$(wslpath -w \"$LOCAL\")\" /righttitle=\"$(wslpath -w \"$REMOTE\")\" /leftreadonly
+
+[mergetool "bcomp4"]
+  trustExitCode = true
+  cmd = "/usr/local/bin/bcomp" \"$(wslpath -w \"$LOCAL\")\" \"$(wslpath -w \"$REMOTE\")\" \"$(wslpath -w \"$BASE\")\" \"$(wslpath -w \"$BMERGED\")\"
+
 [user]
 	name = Peter Coxhead
-	email = peter.coxhead@orionhealth.com
+	email = peter.coxhead@smartpay.co.nz

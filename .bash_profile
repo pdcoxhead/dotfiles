@@ -1,5 +1,5 @@
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/Library/Python/2.7/bin:$HOME/bin:/usr/local/bin/:$PATH";
+export PATH="$HOME/bin:/usr/local/bin/:$PATH";
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -45,21 +45,15 @@ fi;
 complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
-complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+# complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 export PATH="$HOME/.rbenv/bin:$PATH"
-export JAVA_HOME=$(/usr/libexec/java_home)
 eval "$(rbenv init -)"
 
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-export RGRAV_HOME="/Users/$USER/bin/rgrav"
-export PATH=$JAVA_HOME/bin:$PATH:$RGRAV_HOME
-source $RGRAV_HOME/rgrav-completion.bash
 #export PATH=$PATH:/usr/local/go/bin/
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
-source /Users/peterco/git-completion.bash
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
@@ -68,5 +62,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
-export PATH
+#PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+#export PATH
