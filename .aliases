@@ -7,18 +7,15 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
+alias dl="cd /mnt/c/Users/peterco/Downloads"
+alias dt="cd /mnt/c/Users/peterco/Desktop"
 alias p="cd ~/Projects"
-alias onedrive="cd ~/Documents/Office365/OneDrive/OneDrive\ -\ Orion\ Health/"
 alias g="git"
 alias h="history"
 alias j="jobs"
-alias cdcd="cd ~/Projects/continuous-delivery"
-alias platform="cd ~/Projects/shared-services/platformws/platform"
-alias projects="cd ~/Projects/"
-alias cdcp="cd ~/Projects/other/clinical-portal"
+alias cdpaymark="cd /mnt/d/ModApp/Apps/Paymark/ModApp_Paymark"
+alias cdmappman="cd /mnt/d/ModApp/Apps/AppManager11x/modappmanager"
+alias cdeftposaus="cd /mnt/d/Smartpay/eftposaus"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
